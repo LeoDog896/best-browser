@@ -11,11 +11,13 @@ const config = {
 		})
 	],
 
-	paths: {
-		base: "/best-browser"
-	},
-
 	kit: {
+		paths: {
+			base: "/best-browser"
+		},
+		prerender: {
+			default: true
+		},
 		adapter: adapter()
 	}
 };
