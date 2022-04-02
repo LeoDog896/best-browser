@@ -1,7 +1,10 @@
 // shamelessly stolen from stackoverflow you actually think im going to write this myself? no.
 function get_browser() {
-  var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []; 
-  if(/trident/i.test(M[1])){
+  const ua = navigator.userAgent
+  let tem
+  let M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []; 
+
+  if (/trident/i.test(M[1])){
       tem=/\brv[ :]+(\d+)/g.exec(ua) || []; 
       return {name:'IE',version:(tem[1]||'')};
       }   
