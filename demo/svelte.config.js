@@ -12,7 +12,7 @@ const config = {
 	],
 
 	paths: {
-		base: "best-browser"
+		base: "/best-browser"
 	},
 
 	kit: {
