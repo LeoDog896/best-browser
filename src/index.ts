@@ -17,8 +17,12 @@ function get_browser() {
   };
 }
 
-if (get_browser().name == "Chrome" && !get_browser().version.includes("100")) {
+export const check = (failure = () => {
   while (true) {
     alert("NO UPDATE YOUR BROWSER ITS NOT CHROME AAAAA")
+  }
+}) => {
+  if (get_browser().name == "Chrome" && !get_browser().version.includes("100")) {
+    failure()
   }
 }
