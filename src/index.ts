@@ -24,7 +24,7 @@ function get_browser() {
 
 export const check = (failure = () => {
 	for (;;) {
-		alert("NO UPDATE YOUR BROWSER ITS NOT CHROME AAAAA");
+		alert("NO UPDATE YOUR BROWSER ITS NOT CHROME OVER VERSION 100 AAAAA");
 	}
 }) => {
 	if (get_browser().name == "Chrome" && !get_browser().version.includes("100")) {
